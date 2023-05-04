@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Library</title>
+    <link rel="stylesheet" href="../res/css/styles.css  ">
+    <link rel="icon" type="image/x-icon" href="../res/img/sl-favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col">
+                <div class="landing-banner">
+                    <div class="event-img">
+                        <img src="../res/img/events/welcome.png" alt="Welcome to Silent Library">
+                    </div>
+                    <div class="banner-details">
+                        <h1>Welcome!</h1>
+                        <br><br>
+                        <h3>The library is a place for you to feel comfortable and at home. Please join us for our next
+                            event.</h3>
+                        <br><br>
+                        <div class="quote">
+                            <em>“A good library will never be too neat, or too dusty, because somebody will always be in
+                                it, taking books off the shelves and staying up late reading them.”</em>
+                            <br><br>
+                            <em>― Lemony Snicket, Horseradish.</em>
+                        </div>
+                    </div>
+                </div>
+                <h1></h1>
+                <div class="slideshow-container">
+
+                    <!-- Slideshow images list -->
+                    <div class="slides">
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504090529_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504090549_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504090732_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504090825-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504092419_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504092610_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504092840_01-150x150.jpg">
+                        </div>
+
+                        <div class="slide-images">
+                            <img src="../res/img/library/IMG20220504092847-150x150.jpg">
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <div class="buttons">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+
+                <h1 class="section-heading">Featured Books</h1>
+                <!-- Featured Books -->
+                <div class="book-col">
+                    <div class="book-list">
+                        <div class="content">
+                            <img src="../res/img/books/the_school_for_good_mothers.jpg"
+                                alt="The School for Good Mothers">
+                            <h2 class="book-title">The School for Good Mothers</h2>
+                            <p>Jessamine Chan</p>
+                            <p class="rating"><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="book-overlay">
+                            <button class="btn btn-info">Borrow</button>
+                            <button class="btn btn-info">Buy</button>
+                            <br><br>
+                            <button class="btn btn-success">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-list">
+                        <div class="content">
+                            <img class="" src="../res/img/books/to_paradise.jpg" alt="To Paradise">
+                            <h2 class="book-title">To Paradise</h2>
+                            <p>Hanya Yanagihara</p>
+                            <p class="rating"><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="book-overlay">
+                            <button class="btn btn-info">Borrow</button>
+                            <button class="btn btn-info">Buy</button>
+                            <br><br>
+                            <button class="btn btn-success">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-list">
+                        <div class="content">
+                            <img src="../res/img/books/trust.jpg" alt="Trust">
+                            <h2 class="book-title">Trust</h2>
+                            <p>Hernan Diaz</p>
+                            <p class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="book-overlay">
+                            <button class="btn btn-info">Borrow</button>
+                            <button class="btn btn-info">Buy</button>
+                            <br><br>
+                            <button class="btn btn-success">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-list">
+                        <div class="content">
+                            <img src="../res/img/books/young_mungo.jpg" alt="Young Mungo">
+                            <h2 class="book-title">Young Mungo</h2>
+                            <p>Douglas Stuart</p>
+                            <p class="rating"><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                        </div>
+                        <div class="book-overlay">
+                            <button class="btn btn-info">Borrow</button>
+                            <button class="btn btn-info">Buy</button>
+                            <br><br>
+                            <button class="btn btn-success">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        slideShow(slideIndex);
+
+        function slideShow(n) {
+            let i;
+            var slides = $(".slide-images");
+            if (n > slides.length - 3) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 2 }
+            for (i = 0; i <= slides.length; i++) {
+                slides.eq(i).hide();
+            }
+            $('.slide-images').eq(n).fadeIn("slow");
+            $('.slide-images').eq(n + 1).fadeIn("slow");
+            $('.slide-images').eq(n + 2).fadeIn("slow");
+        }
+
+        // Next/previous controls
+        function plusSlides(n) {
+            slideShow(slideIndex += n);
+        }
+    </script>
+</body>
+
+</html>

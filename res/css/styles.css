@@ -1,0 +1,817 @@
+/* 
+colors:
+#E1D7C6
+#178091
+#F8F4EA
+*/
+
+/* Universal css property */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* change background color inside of main tag */
+main {
+    background-color: #E1D7C6;
+}
+
+/* remove underline for anchor tags*/
+a {
+    text-decoration: none;
+}
+
+/* remove the bullet style for lists*/
+li {
+    list-style: none;
+}
+
+#profile-name h6 {
+    width: 50px;
+    color: #178091;
+    text-align: center;
+}
+
+#tabs {
+    width: 50%;
+    margin: auto;
+}
+
+/* adjust size and padding of logo image */
+.logo img {
+    padding: 2px 25px;
+    width: 150px;
+    position: absolute;
+}
+
+.navbar {
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+/* hidden border for input form where property is disabled */
+input:disabled {
+    border-style: hidden;
+}
+
+/* change color of links in header */
+.nav-links a {
+    color: #178091;
+}
+
+/* spread horizontally and center align menu*/
+.menu {
+    display: flex;
+    font-size: 16px;
+    gap: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* add padding around menu list */
+.menu li {
+    padding: 5px 14px;
+}
+
+/* add background color in menu list when hovering */
+.menu li:hover {
+    background-color: #E1D7C6;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* make menu links bolder */
+.menu li a {
+    font-weight: bolder;
+}
+
+/* align footer and change background color */
+.footer {
+    vertical-align: bottom;
+    position: relative;
+    overflow: hidden;
+    background-color: #F8F4EA
+}
+
+/* align link, change color and size in footer */
+.nav-left {
+    font-size: 18px;
+    float: left;
+    padding: 14px 16px;
+}
+
+.nav-login {
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 35%;
+}
+
+.user {
+    position: absolute;
+    top: 18px;
+}
+
+.user img {
+    width: 50px;
+}
+
+.nav-logout {
+    float: right;
+    margin-right: 200px;
+}
+
+.drop-down {
+    position: absolute;
+    display: none;
+    top: -10px;
+    left: 70px;
+}
+
+.drop-down li {
+    padding: 4px;
+    width: 100px;
+}
+
+.nav-login li {
+    margin: 0 5px;
+    padding: 5px;
+    width: 140px;
+}
+
+.nav-login span {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+/* add background color in menu list when hovering */
+.nav-right li:hover {
+    background-color: #E1D7C6;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* make menu links bolder */
+.nav-right li a {
+    font-weight: bolder;
+}
+
+/* set size of profile image to the right and add padding */
+.profile img {
+    width: 50px;
+    position: relative;
+    padding: 20px 20px;
+}
+
+/* change color of link when hovering */
+.nav-left li a:hover {
+    color: #E1D7C6;
+}
+
+/* change color of copyright in footer */
+.menu p {
+    color: #C58940;
+}
+
+/* add padding to the col class and adjust minimum height */
+.col {
+    padding: 2% 4%;
+    min-height: 100vh;
+}
+
+/* center align books column */
+.book-col {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.section-heading {
+    margin-top: 40px;
+    color: #444;
+    text-shadow: 2px 2px 10px #33333350;
+}
+
+.book-list {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    margin: 30px 10px;
+    width: 390px;
+    padding: 10px 0;
+    height: 500px;
+}
+
+.book-overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+}
+
+.book-list:hover .content {
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+
+.book-list:hover .book-overlay {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/* book list image size */
+.book-list img {
+    max-height: 300px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* align booktitle to center */
+.book-title {
+    padding-top: 20px;
+    color: #444;
+}
+
+.content {
+    color: #444;
+}
+
+.rating i {
+    font-size: 25px;
+    color: #C58940;
+}
+
+/* Adjust the margin of book description */
+.book-list p {
+    margin: 15px 20px;
+    font-size: 20px;
+}
+
+/* book description shows 3 lines and add ellipsis to overflow*/
+.description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* adjust the padding ang minimum height for sitemap div */
+.sitemap {
+    padding: 2% 20%;
+    min-height: 100vh;
+}
+
+.sitemap li {
+    list-style: disc;
+}
+
+.sitemap li a {
+    color: #178091;
+}
+
+.events {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*add shaddow around box*/
+    background-color: rgb(229, 186, 115, 0.1);
+    /*change background color of event*/
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.events h1 {
+    font-size: 50px;
+}
+
+.event-details h1 {
+    color: #178091;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 300;
+}
+
+.event-details h3 {
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.banner-details {
+    margin: auto;
+}
+
+.event-img img {
+    width: 200px;
+    padding: 0 20px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    margin: auto;
+    font-weight: lighter;
+    color: black;
+}
+
+.landing-banner {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(229, 186, 115, 0.1);
+    /*add shaddow around box*/
+    margin-bottom: 20px;
+}
+
+.banner-details h1 {
+    font-family: 'Lobster', cursive;
+    color: #178091;
+    font-size: 70px;
+    text-shadow: 2px 2px #33333350;
+}
+
+.enquire-btn {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    opacity: 0;
+}
+
+.events:hover .enquire-btn {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.events:hover .event-img {
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+
+.events:hover .event-details {
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+
+
+.btn:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+.registration {
+    width: 800px;
+    margin: auto;
+}
+
+.alert h3 {
+    text-align: center;
+    color: #1BBA93;
+    display: none;
+}
+
+.sign-up {
+    width: 650px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #F8F4EA, #ECE8DD 50%);
+    border-radius: 10px;
+}
+
+.log-in {
+    width: 400px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #F8F4EA, #ECE8DD 50%);
+    border-radius: 10px;
+}
+
+.form-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-header h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #178091;
+    padding: 20px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.form-header h4 {
+    color: #178091;
+    padding-top: 10px;
+}
+
+.form-body {
+    padding: 10px 40px;
+    color: #666;
+}
+
+.label-title {
+    color: #178091;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.sign-up textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+.form-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+}
+
+.row {
+    display: flex;
+}
+
+.row-about {
+    display: flex;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.horizontal {
+    padding-bottom: 20px;
+    border-bottom: 5px double #C58940;
+    width: 500px;
+    margin: auto;
+}
+
+.col-left {
+    flex: 50%;
+}
+
+.col-right {
+    flex: 50%;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact i {
+    color: #178091;
+    font-size: 20px;
+}
+
+.contact h2 {
+    color: #178091;
+    margin: 5px;
+}
+
+.contact h4 {
+    color: #666;
+    font-weight: 200;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    color: #178091;
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 3px 3px #33333350;
+}
+
+.about h4 {
+    color: #666;
+    font-size: 25px;
+    margin: 25px 0;
+    line-height: 30px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 30px 0;
+    height: 300px;
+}
+
+.slides {
+    position: absolute;
+    margin: 0 50px;
+    width: 900px;
+}
+
+.slide-images {
+    display: none;
+    margin: 0 auto;
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translate(-50%, -50%);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.row-member {
+    width: 1000px;
+    margin: auto;
+}
+
+.member {
+    width: 480px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, #F8F4EA, #ECE8DD 50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.member-img {
+    width: 100px;
+    float: left;
+}
+
+.member-img img {
+    width: 100px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.member-details {
+    width: 350px;
+    float: left;
+}
+
+.member-details h3 {
+    color: #717171;
+    padding-bottom: 10px;
+}
+
+.action {
+    width: 480px;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+
+.member-details {
+    width: 350px;
+}
+
+.btn-warning {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn-success {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn-info {
+    background-color: #178091;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px;
+}
+
+/* clear  */
+.clear {
+    clear: both;
+}
+
+.btn-right {
+    float: right;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.enquire-form {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+
+.modal-content {
+    background-color: rgb(229, 186, 115, 0.1);
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.add-member {
+    width: 650px;
+    margin: auto;
+    margin-top: 8%;
+    background: linear-gradient(to right, #F8F4EA, #ECE8DD 50%);
+    border-radius: 10px;
+}
+
+.borrowers-table th {
+    padding: 10px 60px;
+    color: #178091;
+}
+
+.borrowers-table td {
+    padding-left: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.borrowers-table thead {
+    line-height: 60px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.borrowers-table tbody tr:nth-child(even) {
+    background: #ECE8DD;
+}
+
+.borrowers {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.borrowers-table {
+    border-spacing: 0;
+}
+
+.user-profile {
+    width: 80%;
+    margin: 40px auto;
+    width: 650px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #F8F4EA, #ECE8DD 50%);
+    border-radius: 10px;
+}
+
+.user-profile h1 {
+    padding: 20px;
+    text-align: center;
+}
